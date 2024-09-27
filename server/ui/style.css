@@ -1,0 +1,153 @@
+
+:root {
+	--font-color: #ffffff;
+	--shadow-color: rgba(130, 130, 130, 0.4);
+	--ui-appearance-button-color: #bcc4ce;
+	--window-bg-color: #11111d;
+	--content-bg-color: #1f1f2b;
+	
+	--color-chart-line: #595959;
+	--color-chart-font: #ffffff;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--window-bg-color);
+	cursor: default;
+	color: var(--font-color);
+	font-family: 'Inter', sans-serif;
+}
+
+.header {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: var(--content-bg-color);
+}
+
+.header .title {
+	font-size: 22px;
+	font-weight: bold;
+	text-shadow: 2px 1px var(--shadow-color);
+}
+
+#btn-download {
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%; 
+	background-color: var(--ui-appearance-button-color);
+	box-shadow: 2px 1px var(--shadow-color);
+	transition: transform 1s;
+}
+
+#btn-download:hover {
+	box-shadow: 1px 0px var(--shadow-color);
+	transform: scale(1.1);
+}
+
+.content {
+	margin: auto;
+	max-width: 1250px;
+}
+
+.container-large {
+	margin: 10px;
+	background-color: var(--content-bg-color);
+	border-radius: 15px; 
+	padding: 10px;
+}
+
+.container-large .title {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.row {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	margin-bottom: -10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row-item {
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	flex: 0 0 25%;
+	max-width: 25%;
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	box-sizing: border-box;
+}
+
+.container-small {
+	background-color: var(--content-bg-color);
+	box-sizing: border-box;
+	box-shadow: none;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 15px 15px;
+	border-radius: 10px;
+	height: 100%;
+}
+
+.container-small .icon-wrapper {
+	background-color: rgba(68, 68, 68, 0.28);
+	color: #4fbf65;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 9px;
+}
+
+
+.container-small .text-wrapper .value {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+.container-small .text-wrapper .caption {
+	font-size: 14px;
+	opacity: 0.6;
+}
+
+.chart-container {
+ height: 400px;
+}
+
+@media (max-width: 1150px) {
+	.row-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	
+	.chart-container {
+		height: 350px;
+	}
+}
+
+
+@media (max-width: 650px) {
+	.row-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	
+	.chart-container {
+		height: 240px;
+	}
+}

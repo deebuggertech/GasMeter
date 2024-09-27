@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>GasMeter | Dashboard</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link href="style.css" rel="stylesheet">
+		<script src="chart.js"></script>
+		<script src="script.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="header">
+			<div style="float: left;">
+				<div class="title">GasMeter</div>
+			</div>
+
+			<div style="float: right;">
+				<div id="btn-download" href="">
+					
+					<svg style="display:block;" width="40" height="40" viewBox="-200 -200 900 1000" fill="none" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g><path fill="black" d="M 247.5,0.5 C 267.452,-2.28782 280.619,5.71218 287,24.5C 287.333,107.167 287.667,189.833 288,272.5C 312.833,247.667 337.667,222.833 362.5,198C 374.762,190.161 387.429,189.494 400.5,196C 416.831,209.329 419.664,225.162 409,243.5C 364.5,288 320,332.5 275.5,377C 262.167,385.667 248.833,385.667 235.5,377C 191,332.5 146.5,288 102,243.5C 93.3333,230.167 93.3333,216.833 102,203.5C 112.992,191.506 126.158,188.34 141.5,194C 143.996,195.08 146.33,196.414 148.5,198C 173.333,222.833 198.167,247.667 223,272.5C 223.333,189.833 223.667,107.167 224,24.5C 227.358,11.9766 235.191,3.97662 247.5,0.5 Z"/></g>
+<g><path fill="black" d="M 27.5,318.5 C 46.1269,317.656 58.2936,325.989 64,343.5C 64.5,377.832 64.6667,412.165 64.5,446.5C 191.833,446.5 319.167,446.5 446.5,446.5C 446.333,412.165 446.5,377.832 447,343.5C 452.684,325.835 464.851,317.668 483.5,319C 497.008,321.505 505.841,329.338 510,342.5C 510.667,390.833 510.667,439.167 510,487.5C 506.993,497.84 500.493,505.007 490.5,509C 334.889,510.662 179.222,510.996 23.5,510C 12,506.5 4.5,499 1,487.5C 0.333333,439.167 0.333333,390.833 1,342.5C 5.33181,329.326 14.1651,321.326 27.5,318.5 Z"/></g>
+</svg>
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="content">
+
+
+			<div class="container-large">  
+				<div class="title">Today</div>
+				<div class="chart-container">
+					<canvas id="chart-0" style="height: 100%; width: 100%;"></canvas>
+				</div>
+			</div>
+			
+			<div class="container-large">  
+				<div class="title">Historic</div>
+				<div class="chart-container">
+					<canvas id="chart-1" style="height: 100%; width: 100%;"></canvas>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>
